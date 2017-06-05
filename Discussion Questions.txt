@@ -1,0 +1,54 @@
+Discussion Questions
+
+1)   Recursion is a function calling itself to be able to solve smaller subproblems.
+
+1.2) The Base Case is to terminate the loop so that it does not become infinite recursion
+
+
+2.1) A graph is made up of nodes (or vertices) which are connected
+     by edges.  Each node contains the data and a list of it's adjacent nodes.  There
+     is no beginning or end of a graph.
+
+2.2) Graphs contain loops.
+
+2.3) Biological Species or Ancestry would be good to use in graphs.
+
+
+
+Performance of Different Data Structures
+
+    Fill in the runtimes for the following actions for the table below:
+    Data Structure              Index   Search  Add-R   Add-L   Pop-L   Pop-R
+    Python List (Array)         O(1)    O(n)    O(1)    O(n)    O(n)    O(1)             
+    Linked List                 O(n)    O(n)    O(1)    O(1)    O(1)    O(n)  
+    Doubly-Linked List          O(n)    O(n)    O(1)    O(1)    O(1)    O(1)
+    Queue (as Array)            X       X       O(1)    X       O(n)     X
+    Queue (as LL or DLL)        X       X       O(1)    X       O(1)     X
+    Stack (as Array, LL, or DLL)X       X       O(1)    X       X       O(1)
+    Deque (as DLL)              X       X       O(1)    O(1)    O(1)    O(1)
+
+        Index: Find an item in the structure when you know its position
+        Search: Find an item in the structure when you know its data
+        Add(R/L): Set a key in set/dictionary or add node to tree
+        Pop(R/L): Remove a key or node
+
+Fill in Runtime and Memory:
+
+    The answers for dictionary have been provided; you should fill in the rest:
+    Data Structure          Get         Add         Delete      Iterate Memory
+    Dictionary (Hash Map)   O(1)        O(1)        O(1)        O(n)    medium
+    Set (Hash Map)          O(1)        O(1)        O(1)        O(n)    medium
+    Binary Search Tree      O(log n)    O(log n)    O(log n)    O(1)    little
+    Tree                    O(n)        O(1)        O(1)        O(1)    little  
+
+        Get: Find an item in the structure
+        Add: Set a key in set/dictionary or add node to tree
+        Delete: Remove a key or node
+        Iterate: Find next item in data structure
+        Memory: Relative to data, how much memory is used? (Choices: a little, medium, or a lot)
+
+1) Bubble Sort AKA "sinking sort", is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items, and swaps them if they are in the wrong order repeating until the list is sorted.
+
+2) Merge Sort AKA "Divide and Conquer" divides the unsorted list into 2 sublists that contain 1 element...then repeatedly merges the sublists into new sorted sublists until there is only 1 sublist left which i sorted.
+
+3) Quicksort AKA "Conquer and Divide" is misleading in its name...it sorts by reordering the array so that all elements with values less than the pivot come before the pivot leaving the elements that are greater than behind it until sorted.
